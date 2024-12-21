@@ -62,10 +62,10 @@ async def start(update: Update, context: CallbackContext):
         "*💀Use /attack <ip> <port> <duration>*\n"
         "*💀ꜱᴇʀᴠᴇʀ ꜰʀᴇᴇᴢ ᴡɪᴛʜ @HT_HASEEN 🚀*" 
 
-    if user_id != ADMIN_USER_ID:
+
         await context.bot.send_message(chat_id=update.effective_chat.id, text="*❌ You are not authorized to remove users!*", parse_mode='Markdown')
         return
-    if len(context.args) != 1:
+    
         await context.bot.send_message(chat_id=update.effective_chat.id, text="*⚠️ Usage: /remove <user_id>*", parse_mode='Markdown')
         return
     target_user_id = int(context.args[0])
