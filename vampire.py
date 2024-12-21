@@ -62,7 +62,7 @@ async def start(update: Update, context: CallbackContext):
         "*💀Use /attack <ip> <port> <duration>*\n"
         "*💀ꜱᴇʀᴠᴇʀ ꜰʀᴇᴇᴢ ᴡɪᴛʜ @HT_HASEEN 🚀*" 
     
-    await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
+    
 
 async def remove_user(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
